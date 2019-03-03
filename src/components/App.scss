@@ -1,0 +1,45 @@
+.app {
+  text-align: center;
+  height: 100vh;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  &:first-child {
+    .cell {
+      border-top: none;
+    }
+  }
+  &:last-child {
+    .cell {
+      border-bottom: none;
+    }
+  }
+}
+
+.cell {
+  font-size: 15vmin;
+  text-transform: uppercase;
+  // font-weight: 500;
+  width: 20vmin;
+  height: 20vmin;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  &:first-child {
+    border-left: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
